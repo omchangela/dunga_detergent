@@ -321,23 +321,68 @@
 @media (max-width: 1024px) {
   .benefitsGrid {
     grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem;
+  }
+  .formWrapper {
+    padding: 0 1rem;
   }
 }
 
 @media (max-width: 768px) {
+  .benefitsSection {
+    padding: 3rem 0;
+  }
+  .formSectionArea {
+    padding: 3.5rem 0;
+  }
+  .benefitsGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .formGrid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+  .docsGrid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+  .formCard {
+    padding: 1.75rem 1.5rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .benefitsGrid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
   .formGrid {
     grid-template-columns: 1fr;
+    gap: 1rem;
   }
   .fullWidth {
     grid-column: span 1;
   }
   .docsGrid {
     grid-template-columns: 1fr;
-  }
-  .benefitsGrid {
-    grid-template-columns: 1fr;
+    gap: 1rem;
   }
   .formCard {
-    padding: 1.5rem;
+    padding: 1.35rem 1rem;
+    border-radius: 1.25rem;
+  }
+  .formHeader {
+    margin-bottom: 2rem;
+  }
+  .cardHeader {
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+  .cardHeader h3 {
+    font-size: 1.05rem;
+  }
+  .submitBtnArea button {
+    width: 100%;
+    justify-content: center;
   }
 }

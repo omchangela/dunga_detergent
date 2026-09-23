@@ -165,3 +165,19 @@
 .popupBtn:hover {
   background: #1ebe5b;
 }
+
+@media (max-width: 640px) {
+  .wrapper {
+    bottom: 1rem;
+    right: 1rem;
+  }
+  .fab {
+    width: 48px;
+    height: 48px;
+  }
+  .popup {
+    width: calc(100vw - 2rem);
+    max-width: 310px;
+    bottom: 4rem;
+  }
+}

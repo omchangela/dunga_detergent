@@ -360,25 +360,65 @@
 @media (max-width: 1080px) {
   .infoGrid {
     grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
   }
   .layoutGrid {
     grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .infoGrid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin-bottom: 2.5rem;
+  }
+  .sideCard {
+    padding: 1.75rem 1.5rem;
+  }
+  .formContainer {
+    padding: 2rem 1.5rem;
   }
 }
 
 @media (max-width: 640px) {
   .infoGrid {
     grid-template-columns: 1fr;
+    gap: 0.85rem;
+    margin-bottom: 2rem;
+  }
+  .infoCard {
+    padding: 1.25rem 1.15rem;
+  }
+  .sideCard {
+    padding: 1.35rem 1rem;
+    border-radius: 1.25rem;
+  }
+  .formContainer {
+    padding: 1.5rem 1rem;
+    border-radius: 1.25rem;
   }
   .inputGrid {
     grid-template-columns: 1fr;
+    gap: 1rem;
+    margin-bottom: 1rem;
   }
-  .formContainer {
-    padding: 1.75rem 1.25rem;
+  .chipRow {
+    gap: 0.4rem;
+  }
+  .typeChip {
+    font-size: 0.78rem;
+    padding: 0.4rem 0.85rem;
   }
   .formFooter {
     flex-direction: column;
     align-items: stretch;
+    gap: 1rem;
+  }
+  .privacyNote {
+    max-width: 100%;
+    text-align: center;
   }
   .submitBtn {
     width: 100%;

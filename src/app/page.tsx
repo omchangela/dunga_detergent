@@ -386,10 +386,6 @@ export default function HomePage() {
                   <p>Our commitment to a healthier planet</p>
                 </div>
               </div>
-
-              <div className={styles.trustBarLeaf} title="Pure Eco Commitment">
-                🌿
-              </div>
             </div>
           </div>
         </div>

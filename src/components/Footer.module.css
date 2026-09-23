@@ -103,7 +103,7 @@
 }
 
 .listLink:hover {
-  color: var(--color-blue);
+  color: #16a34a;
 }
 
 .contactList {
@@ -132,11 +132,11 @@
 }
 
 .contactList a:hover {
-  color: var(--color-blue);
+  color: #16a34a;
 }
 
 .contactIcon {
-  color: var(--color-blue);
+  color: #16a34a;
   flex-shrink: 0;
 }
 
@@ -167,9 +167,9 @@
 }
 
 .social:hover {
-  background: var(--color-blue);
+  background: #16a34a;
   color: #ffffff;
-  border-color: var(--color-blue);
+  border-color: #16a34a;
   transform: translateY(-2px);
 }
 

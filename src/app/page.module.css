@@ -14,11 +14,11 @@
 
 .leafDecorTopRight {
   position: absolute;
-  top: 50px;
+  top: 40px;
   right: 0;
   width: 170px;
   pointer-events: none;
-  z-index: 3;
+  z-index: 1;
 }
 
 .leafDecorBottomLeft {
@@ -27,7 +27,14 @@
   left: 0;
   width: 145px;
   pointer-events: none;
-  z-index: 3;
+  z-index: 1;
+}
+
+@media (max-width: 1024px) {
+  .leafDecorTopRight,
+  .leafDecorBottomLeft {
+    display: none !important;
+  }
 }
 
 .leafImg {
@@ -398,7 +405,7 @@
 /* Horizontal Trust Footer Bar (Inside the White Card Container) */
 .trustBarHorizontal {
   display: grid;
-  grid-template-columns: repeat(4, 1fr) auto;
+  grid-template-columns: repeat(4, 1fr);
   align-items: center;
   gap: 1.5rem;
   margin-top: 2rem;
@@ -414,7 +421,7 @@
   border-right: 1px solid #f1f5f9;
 }
 
-.trustBarItem:nth-child(4) {
+.trustBarItem:last-child {
   border-right: none;
 }
 
@@ -993,10 +1000,26 @@
 @media (max-width: 1024px) {
   .heroContainer {
     grid-template-columns: 1fr;
-    gap: 3rem;
+    gap: 2.5rem;
+    text-align: center;
+  }
+  .heroLeft {
+    max-width: 100%;
+    align-items: center;
+  }
+  .heroSubtitle {
+    margin: 0 auto;
+  }
+  .heroBtnGroup {
+    justify-content: center;
+  }
+  .heroTrustGrid {
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
   }
   .heroRight {
-    height: 360px;
+    height: auto;
+    max-height: 420px;
     justify-content: center;
   }
   .floatingFeatures {
@@ -1009,6 +1032,12 @@
   }
   .trustBarHorizontal {
     grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem;
+  }
+  .trustBarItem {
+    border-right: none;
+    border-bottom: 1px solid #f1f5f9;
+    padding-bottom: 0.75rem;
   }
   .familyBannerGrid {
     grid-template-columns: 1fr;
@@ -1017,32 +1046,149 @@
   }
 }
 
+/* Tablet Portrait (768px) */
 @media (max-width: 768px) {
   .heroSection {
     min-height: auto;
-    padding-top: 6rem;
+    padding-top: 5.75rem;
+    padding-bottom: 2.5rem;
   }
   .heroTrustGrid {
     grid-template-columns: repeat(2, 1fr);
+    gap: 0.75rem;
   }
   .categoryCardsGrid {
     grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
   }
   .rangeHeader {
     flex-direction: column;
     align-items: flex-start;
+    gap: 0.5rem;
   }
   .rangeContainerCard {
-    padding: 1.5rem;
+    padding: 1.75rem 1.5rem;
   }
-  .badgesGrid,
+  .badgesGrid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem;
+  }
   .reviewsGrid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem;
   }
   .trustBarHorizontal {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
   }
   .scriptFlourish {
     display: none;
+  }
+}
+
+/* Smartphone (<= 640px) */
+@media (max-width: 640px) {
+  .heroSection {
+    padding-top: 5.5rem;
+    padding-bottom: 2rem;
+  }
+  .heroLeft {
+    align-items: center;
+    text-align: center;
+    gap: 0.85rem;
+  }
+  .certBadge {
+    font-size: 0.72rem;
+    padding: 0.35rem 0.85rem;
+    max-width: 100%;
+    justify-content: center;
+  }
+  .heroHeadline {
+    font-size: clamp(1.85rem, 8vw, 2.5rem);
+    line-height: 1.12;
+    margin: 0.2rem 0;
+  }
+  .heroSubtitle {
+    font-size: 0.92rem;
+    line-height: 1.55;
+    padding: 0 0.25rem;
+  }
+  .heroBtnGroup {
+    flex-direction: column;
+    width: 100%;
+    gap: 0.75rem;
+    margin-top: 0.5rem;
+  }
+  .btnExplore,
+  .btnContact {
+    width: 100%;
+    justify-content: center;
+  }
+  .heroTrustGrid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.65rem;
+    width: 100%;
+    max-width: 360px;
+    margin: 0.75rem auto 0;
+  }
+  .heroShowcaseWrapper {
+    max-height: 280px;
+  }
+  .heroShowcaseImg {
+    max-height: 280px;
+  }
+  .rangeSection {
+    margin-top: -0.5rem;
+    padding-bottom: 2.5rem;
+  }
+  .rangeContainerCard {
+    padding: 1.25rem 1rem;
+    border-radius: 1.5rem;
+  }
+  .categoryCardsGrid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.75rem;
+  }
+  .catCard {
+    padding: 1rem 0.75rem;
+    border-radius: 1rem;
+  }
+  .catImgWrapper {
+    height: 110px;
+  }
+  .catCardTitle {
+    font-size: 0.92rem;
+  }
+  .trustBarHorizontal {
+    grid-template-columns: 1fr;
+    gap: 0.85rem;
+    margin-top: 1.5rem;
+    padding-top: 1.25rem;
+  }
+  .trustBarItem {
+    border-right: none;
+    border-bottom: 1px solid #f1f5f9;
+    padding-bottom: 0.75rem;
+  }
+  .trustBarItem:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+  .badgesGrid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  .reviewsGrid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  .familyBannerGrid {
+    padding: 2rem 1.25rem;
+  }
+  .familyHeadline {
+    font-size: clamp(1.6rem, 6vw, 2.2rem);
+  }
+  .familyStatsGrid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
   }
 }
