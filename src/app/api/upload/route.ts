@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import fs from "fs";
 import path from "path";
+import { put } from "@vercel/blob";
 
 export async function POST(request: NextRequest) {
   try {
@@ -19,6 +20,20 @@ export async function POST(request: NextRequest) {
       );
     }
 
+    const originalName = file.name.replace(/[^a-zA-Z0-9.-]/g, "_");
+    const uniqueName = `products/${Date.now()}_${originalName}`;
+
+    // 1. If Vercel Blob storage token is configured, upload directly to Vercel CDN
+    if (process.env.BLOB_READ_WRITE_TOKEN) {
+      const blob = await put(uniqueName, file, { access: "public" });
+      return NextResponse.json({
+        success: true,
+        url: blob.url,
+        filename: uniqueName,
+      });
+    }
+
+    // 2. Otherwise save locally in public/uploads for local development
     const bytes = await file.arrayBuffer();
     const buffer = Buffer.from(bytes);
 
@@ -27,17 +42,14 @@ export async function POST(request: NextRequest) {
       fs.mkdirSync(uploadsDir, { recursive: true });
     }
 
-    // Generate safe unique filename
-    const originalName = file.name.replace(/[^a-zA-Z0-9.-]/g, "_");
-    const uniqueName = `${Date.now()}_${originalName}`;
-    const filePath = path.join(uploadsDir, uniqueName);
-
+    const localFileName = `${Date.now()}_${originalName}`;
+    const filePath = path.join(uploadsDir, localFileName);
     fs.writeFileSync(filePath, buffer);
 
     return NextResponse.json({
       success: true,
-      url: `/uploads/${uniqueName}`,
-      filename: uniqueName,
+      url: `/uploads/${localFileName}`,
+      filename: localFileName,
     });
   } catch (error) {
     console.error("Upload error:", error);

@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
-import { getProducts, saveProducts, ProductData } from "@/lib/storage";
+import { updateProduct, deleteProduct } from "@/lib/db";
 
 export async function PUT(
   request: NextRequest,
@@ -13,22 +13,11 @@ export async function PUT(
     }
 
     const body = await request.json();
-    const products = getProducts();
-    const index = products.findIndex((p) => p.id === numId);
+    const updated = await updateProduct(numId, body);
 
-    if (index === -1) {
+    if (!updated) {
       return NextResponse.json({ success: false, message: "Product not found" }, { status: 404 });
     }
-
-    const existing = products[index];
-    const updated: ProductData = {
-      ...existing,
-      ...body,
-      id: numId, // ensure id doesn't get mutated
-    };
-
-    products[index] = updated;
-    saveProducts(products);
 
     return NextResponse.json({ success: true, product: updated });
   } catch (error) {
@@ -48,14 +37,12 @@ export async function DELETE(
       return NextResponse.json({ success: false, message: "Invalid ID" }, { status: 400 });
     }
 
-    const products = getProducts();
-    const filtered = products.filter((p) => p.id !== numId);
+    const deleted = await deleteProduct(numId);
 
-    if (filtered.length === products.length) {
+    if (!deleted) {
       return NextResponse.json({ success: false, message: "Product not found" }, { status: 404 });
     }
 
-    saveProducts(filtered);
     return NextResponse.json({ success: true, message: "Product deleted" });
   } catch (error) {
     console.error("DELETE /api/products/[id] error:", error);

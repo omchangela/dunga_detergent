@@ -1,8 +1,8 @@
 import { NextRequest, NextResponse } from "next/server";
-import { getInquiries, saveInquiries, InquiryData } from "@/lib/storage";
+import { getAllInquiries, createInquiry } from "@/lib/db";
 
 export async function GET() {
-  const inquiries = getInquiries();
+  const inquiries = await getAllInquiries();
   return NextResponse.json(inquiries);
 }
 
@@ -18,21 +18,14 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    const inquiries = getInquiries();
-    const newInquiry: InquiryData = {
-      id: `inq-${Date.now()}-${Math.floor(100 + Math.random() * 900)}`,
+    const newInquiry = await createInquiry({
       name: name.trim(),
       phone: phone.trim(),
       email: email ? email.trim() : undefined,
       city: city ? city.trim() : "Unspecified",
       inquiryType: inquiryType || "General Product Enquiry",
       message: message.trim(),
-      status: "new",
-      createdAt: new Date().toISOString(),
-    };
-
-    inquiries.unshift(newInquiry);
-    saveInquiries(inquiries);
+    });
 
     return NextResponse.json(
       {

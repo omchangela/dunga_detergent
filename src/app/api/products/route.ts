@@ -1,8 +1,8 @@
 import { NextRequest, NextResponse } from "next/server";
-import { getProducts, saveProducts, ProductData } from "@/lib/storage";
+import { getAllProducts, createProduct } from "@/lib/db";
 
 export async function GET() {
-  const products = getProducts();
+  const products = await getAllProducts();
   return NextResponse.json(products);
 }
 
@@ -18,11 +18,7 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    const products = getProducts();
-    const newId = products.length > 0 ? Math.max(...products.map((p) => p.id)) + 1 : 1;
-
-    const newProduct: ProductData = {
-      id: newId,
+    const newProduct = await createProduct({
       name: name.trim(),
       category: category.trim(),
       badge: badge ? badge.trim() : "Featured Formulation",
@@ -33,14 +29,7 @@ export async function POST(request: NextRequest) {
       weights: Array.isArray(weights) ? weights.filter(Boolean) : ["500ml", "1L"],
       formulation: formulation ? formulation.trim() : undefined,
       phBalanced: Boolean(phBalanced),
-    };
-
-    products.unshift(newProduct);
-    const saved = saveProducts(products);
-
-    if (!saved) {
-      return NextResponse.json({ success: false, message: "Failed to persist product." }, { status: 500 });
-    }
+    });
 
     return NextResponse.json({ success: true, product: newProduct }, { status: 201 });
   } catch (error) {
