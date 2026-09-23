@@ -1,0 +1,349 @@
+.pageWrap {
+  background: #ffffff;
+}
+
+/* ─── Legacy & Story ──────────────────────────────────────────────────────── */
+.legacySection {
+  background: #ffffff;
+  padding: 5rem 0;
+}
+
+.legacyGrid {
+  display: grid;
+  grid-template-columns: 1.15fr 1fr;
+  gap: 3.5rem;
+  align-items: center;
+}
+
+.legacyContent {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.sectionHeading {
+  font-family: var(--font-heading);
+  font-size: clamp(2.2rem, 3.8vw, 3rem);
+  font-weight: 900;
+  color: #0f172a;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+}
+
+.greenText {
+  color: #16a34a;
+}
+
+.legacyDesc {
+  font-size: 1.05rem;
+  color: #475569;
+  line-height: 1.7;
+}
+
+.certPills {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.85rem;
+  margin: 0.5rem 0 1rem;
+}
+
+.certPill {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 0.75rem;
+  padding: 0.65rem 0.95rem;
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: #1e293b;
+}
+
+.ctaRow {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.legacyVisualWrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.facilityCard {
+  position: relative;
+  border-radius: 1.75rem;
+  overflow: hidden;
+  box-shadow: 0 20px 50px -10px rgba(15, 23, 42, 0.12);
+  border: 1px solid #e2e8f0;
+}
+
+.facilityImg {
+  width: 100%;
+  height: 440px;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.facilityCard:hover .facilityImg {
+  transform: scale(1.03);
+}
+
+.facilityOverlayBadge {
+  position: absolute;
+  bottom: 1.5rem;
+  left: 1.5rem;
+  right: 1.5rem;
+  background: rgba(255, 255, 255, 0.96);
+  backdrop-filter: blur(12px);
+  padding: 1rem 1.25rem;
+  border-radius: 1.25rem;
+  border: 1px solid rgba(226, 232, 240, 0.8);
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.08);
+}
+
+.facilityBadgeIcon {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: #dcfce7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.facilityOverlayBadge strong {
+  display: block;
+  font-family: var(--font-heading);
+  font-size: 0.95rem;
+  font-weight: 800;
+  color: #0f172a;
+}
+
+.facilityOverlayBadge span {
+  font-size: 0.8rem;
+  color: #64748b;
+}
+
+/* ─── Stats Section ──────────────────────────────────────────────────────── */
+.statsSection {
+  background: #f8fafc;
+  padding: 4rem 0;
+  border-top: 1px solid #e2e8f0;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.statsGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+
+.statCard {
+  border: 1.5px solid transparent;
+  border-radius: 1.5rem;
+  padding: 2rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.statCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.06);
+}
+
+.statIconBox {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0.75rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.statNumber {
+  font-family: var(--font-heading);
+  font-size: 2.75rem;
+  font-weight: 900;
+  color: #0f172a;
+  line-height: 1;
+}
+
+.statLabel {
+  font-family: var(--font-heading);
+  font-size: 1rem;
+  font-weight: 800;
+  color: #1e293b;
+  margin-top: 0.5rem;
+}
+
+.statSub {
+  font-size: 0.8rem;
+  color: #64748b;
+  margin-top: 0.15rem;
+}
+
+/* ─── 5-Step Process Section ─────────────────────────────────────────────── */
+.processSection {
+  background: #ffffff;
+  padding: 5.5rem 0;
+}
+
+.processGrid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1.25rem;
+}
+
+.processCard {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 1.25rem;
+  padding: 1.75rem 1.25rem;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+.processCard:hover {
+  transform: translateY(-5px);
+  border-color: #16a34a;
+  background: #ffffff;
+  box-shadow: 0 14px 34px rgba(22, 163, 74, 0.08);
+}
+
+.stepNumBadge {
+  font-family: var(--font-heading);
+  font-size: 0.75rem;
+  font-weight: 900;
+  color: #16a34a;
+  background: #dcfce7;
+  padding: 0.25rem 0.65rem;
+  border-radius: 1rem;
+  width: fit-content;
+  margin-bottom: 1rem;
+}
+
+.stepIconHolder {
+  width: 40px;
+  height: 40px;
+  border-radius: 0.75rem;
+  background: #ffffff;
+  border: 1px solid #dcfce7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.stepTitle {
+  font-family: var(--font-heading);
+  font-size: 1rem;
+  font-weight: 800;
+  color: #0f172a;
+  line-height: 1.3;
+  margin-bottom: 0.65rem;
+}
+
+.stepDesc {
+  font-size: 0.82rem;
+  color: #64748b;
+  line-height: 1.6;
+}
+
+/* ─── Vision & Mission Section ───────────────────────────────────────────── */
+.visionSection {
+  background: linear-gradient(180deg, #f8fafc 0%, #f0fdf4 100%);
+  padding: 5.5rem 0;
+  border-top: 1px solid #e2e8f0;
+}
+
+.visionGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.visionCard {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 1.75rem;
+  padding: 3rem 2.5rem;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.04);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  transition: transform 0.25s ease;
+}
+
+.visionCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 40px rgba(22, 163, 74, 0.08);
+}
+
+.visionIconCircle {
+  width: 54px;
+  height: 54px;
+  border-radius: 1rem;
+  background: #f0fdf4;
+  border: 1px solid #dcfce7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.visionTitle {
+  font-family: var(--font-heading);
+  font-size: 1.65rem;
+  font-weight: 900;
+  color: #0f172a;
+}
+
+.visionText {
+  font-size: 1.05rem;
+  color: #475569;
+  line-height: 1.7;
+}
+
+/* ─── Responsive ─────────────────────────────────────────────────────────── */
+@media (max-width: 1024px) {
+  .legacyGrid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+  .statsGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .processGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .visionGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .statsGrid {
+    grid-template-columns: 1fr;
+  }
+  .processGrid {
+    grid-template-columns: 1fr;
+  }
+  .certPills {
+    grid-template-columns: 1fr;
+  }
+}

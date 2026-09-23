@@ -1,0 +1,57 @@
+[
+  {
+    "id": "inq-1790154929013-768",
+    "name": "Naveen Kumar",
+    "phone": "+91 9123456780",
+    "email": "naveen@retailmart.com",
+    "city": "Tirupati, AP",
+    "inquiryType": "Supermarket / Retail Stockist",
+    "message": "Requesting 100 cases of Dishwash and Floor cleaner for our supermarket branches.",
+    "status": "new",
+    "createdAt": "2026-09-23T09:15:29.013Z"
+  },
+  {
+    "id": "inq-179015003",
+    "name": "Suresh Babu",
+    "phone": "+91 94901 88776",
+    "email": "suresh.retail@yahoo.com",
+    "city": "Rajahmundry, Andhra Pradesh",
+    "inquiryType": "Supermarket / Retail Stockist",
+    "message": "Interested in stocking the complete AVD Herbal Soaps line (Neem, Coffee, Rice Milk, Multani Mitti) across our 3 supermarket branches.",
+    "status": "new",
+    "createdAt": "2026-09-23T11:20:00.000Z"
+  },
+  {
+    "id": "inq-179015001",
+    "name": "K. Venkatesh",
+    "phone": "+91 98480 22334",
+    "email": "venkatesh.traders@gmail.com",
+    "city": "Vijayawada, Andhra Pradesh",
+    "inquiryType": "Distributorship / Dealership",
+    "message": "We run an FMCG super-stockist distribution network covering 120+ retail stores in Krishna district. We would like to apply for an exclusive distributorship for Monagodu 501 dishwash liquid and detergent.",
+    "status": "new",
+    "createdAt": "2026-09-23T09:15:00.000Z"
+  },
+  {
+    "id": "inq-1790154409021-432",
+    "name": "G. Rajesh Varma",
+    "phone": "+91 9988776655",
+    "email": "rajesh.varma@agricorp.in",
+    "city": "Guntur, Andhra Pradesh",
+    "inquiryType": "Distributorship / Dealership",
+    "message": "We are interested in distributing Monagodu 501 products across 50 supermarkets in Guntur district.",
+    "status": "new",
+    "createdAt": "2026-09-23T09:06:49.021Z"
+  },
+  {
+    "id": "inq-179015002",
+    "name": "Ananya Reddy",
+    "phone": "+91 97012 44556",
+    "email": "procurement@amaravatihospitals.org",
+    "city": "Guntur, Andhra Pradesh",
+    "inquiryType": "Institutional & Bulk Orders",
+    "message": "Requesting wholesale price quote for monthly supply of 500 liters of hospital-grade floral floor cleaner (BKC formulation) and surface degreasers.",
+    "status": "contacted",
+    "createdAt": "2026-09-22T14:40:00.000Z"
+  }
+]

@@ -1,0 +1,286 @@
+[
+  {
+    "id": 13,
+    "name": "Monagodu 501 Active Fabric Conditioner",
+    "category": "Detergent & Laundry",
+    "badge": "Ultra Soft Bloom",
+    "badgeColor": "#7c3aed",
+    "img": "/assets/liquid_detergent.jpg",
+    "desc": "Premium fabric softener and optical conditioner that revitalizes delicate threads, prevents static clinging, and imparts fresh lavender floral aroma.",
+    "features": [
+      "24-hour encapsulation fragrance",
+      "Feather soft touch on woolens & cottons",
+      "Anti-static cling prevention"
+    ],
+    "weights": [
+      "500ml",
+      "1L",
+      "2L"
+    ],
+    "formulation": "Cationic Surfactant Conditioning Complex",
+    "phBalanced": true
+  },
+  {
+    "id": 1,
+    "name": "Monagodu 501 Dish Wash Liquid",
+    "category": "Dish Wash",
+    "badge": "Active Lemon Power",
+    "badgeColor": "#16a34a",
+    "img": "/assets/dishwash_liquid.jpg",
+    "desc": "Commercial-strength grease removal formulation powered by active lemon extracts. Leaves glassware and stainless steel sparkling with zero cloudy residue.",
+    "features": [
+      "Instant grease breakdown on kadhais & tawas",
+      "Gentle on skin with balanced neutral pH",
+      "Sustained lemon aroma that neutralizes food odors",
+      "High-foaming concentrated formulation"
+    ],
+    "weights": [
+      "250ml",
+      "500ml",
+      "1L",
+      "5L Can"
+    ],
+    "formulation": "Triple Active Surfactant System with Lemon Oil",
+    "phBalanced": true
+  },
+  {
+    "id": 2,
+    "name": "Monagodu 501 Liquid Detergent",
+    "category": "Detergent & Laundry",
+    "badge": "Optical Brightener",
+    "badgeColor": "#2563eb",
+    "img": "/assets/liquid_detergent.jpg",
+    "desc": "Bio-enzyme concentrated liquid detergent engineered for deep fiber stain removal, color lock preservation, and zero chalky white sediment.",
+    "features": [
+      "Deep fiber micro-penetration for tough collar stains",
+      "Color-lock polymers protect bright shades",
+      "100% compatible with top & front load washing machines",
+      "Encapsulated luxury long-lasting fabric fragrance"
+    ],
+    "weights": [
+      "500ml",
+      "1L",
+      "2L",
+      "5L Can"
+    ],
+    "formulation": "Protease & Amylase Bio-Enzyme Formula",
+    "phBalanced": true
+  },
+  {
+    "id": 3,
+    "name": "Monagodu 501 Floral Floor Cleaner",
+    "category": "Floor & Surface Cleaners",
+    "badge": "99.9% Germ Shield",
+    "badgeColor": "#e11d48",
+    "img": "/assets/floor_cleaner.jpg",
+    "desc": "Hospital-grade disinfectant surface and tile cleaner infused with natural floral botanicals. Safe for marble, granite, ceramic, and hardwood floors.",
+    "features": [
+      "Proven 99.9% bacterial kill rate in 60 seconds",
+      "Streak-free quick-drying glossy shine",
+      "Repels flies and household insects naturally",
+      "Refreshing all-day French rose and blossom scent"
+    ],
+    "weights": [
+      "500ml",
+      "1L",
+      "5L Can"
+    ],
+    "formulation": "Benzalkonium Chloride (BKC) Active Disinfectant",
+    "phBalanced": true
+  },
+  {
+    "id": 4,
+    "name": "Monagodu 501 Surface Cleaner & Degreaser",
+    "category": "Floor & Surface Cleaners",
+    "badge": "Instant Grease Cut",
+    "badgeColor": "#ca8a04",
+    "img": "/assets/surface_cleaner.jpg",
+    "desc": "Fast-acting multi-action trigger spray that dissolves kitchen oil film, chimney grease, exhaust grime, and countertop stains with zero scrubbing.",
+    "features": [
+      "Dissolves stubborn burnt oil and exhaust grime",
+      "Precision spray trigger for hard-to-reach corners",
+      "Non-corrosive on stainless steel and acrylic modular slabs",
+      "Leaves sanitized, residue-free glossy surfaces"
+    ],
+    "weights": [
+      "500ml Trigger",
+      "750ml Refill",
+      "5L"
+    ],
+    "formulation": "Heavy-Duty Alkaline Degreasing Complex",
+    "phBalanced": false
+  },
+  {
+    "id": 5,
+    "name": "Monagodu 501 Multi-Purpose Spray",
+    "category": "Floor & Surface Cleaners",
+    "badge": "All-Surface Care",
+    "badgeColor": "#059669",
+    "img": "/assets/multipurpose.jpg",
+    "desc": "Universal hygiene spray for glass, mirrors, appliance panels, dining tables, and bathroom vanity counters with anti-static dust repelling action.",
+    "features": [
+      "Crystal clear shine with zero water streaks",
+      "Anti-fog and anti-static formula reduces dust buildup",
+      "Safe on glass, chrome, plastic laminates, and wood",
+      "Fresh mint botanical hygiene fragrance"
+    ],
+    "weights": [
+      "500ml Spray",
+      "1L Refill"
+    ],
+    "formulation": "Rapid Evaporating Alcohol Blend + Surfactants",
+    "phBalanced": true
+  },
+  {
+    "id": 6,
+    "name": "Monagodu 501 Power Laundry Soap Bar",
+    "category": "Detergent & Laundry",
+    "badge": "Stubborn Stain Scrub",
+    "badgeColor": "#7c3aed",
+    "img": "/assets/laundry_soap.jpg",
+    "desc": "Traditional dense laundry soap bar fortified with fabric softening agents and active blue brighteners for cuffs, collars, and baby clothes.",
+    "features": [
+      "Targeted rubbing power for heavy dirt and mud marks",
+      "Long-lasting solid bar that does not melt in water",
+      "Retains fabric softness without stiffening threads",
+      "Gentle on palms during manual bucket washing"
+    ],
+    "weights": [
+      "150g",
+      "250g Pack of 4"
+    ],
+    "formulation": "Pure Saponified Vegetable Oils + Brightener",
+    "phBalanced": true
+  },
+  {
+    "id": 7,
+    "name": "LUNA Pink Blossom Beauty Soap",
+    "category": "Herbal & Beauty Soaps",
+    "badge": "Rose Oil Moisture",
+    "badgeColor": "#db2777",
+    "img": "/assets/bath_soap.jpg",
+    "desc": "Luxury grade Grade-1 moisturizing toilet soap enriched with pure Damask rose oil and natural glycerin for velvety soft, radiant skin.",
+    "features": [
+      "TFM 76% Grade-1 luxury bathing experience",
+      "Infused with natural rose essential oil and skin humectants",
+      "Produces rich creamy lather that does not dry skin",
+      "Long-lasting authentic floral bouquet scent"
+    ],
+    "weights": [
+      "125g Single",
+      "Multipack of 3"
+    ],
+    "formulation": "Vegetable Soap Base + Rose Essential Oil",
+    "phBalanced": true
+  },
+  {
+    "id": 8,
+    "name": "AVD Pure Coffee Scrub Soap",
+    "category": "Herbal & Beauty Soaps",
+    "badge": "Natural Exfoliant",
+    "badgeColor": "#78350f",
+    "img": "/assets/coffee_soap.jpg",
+    "desc": "Handcrafted artisan exfoliating soap loaded with finely ground Arabica coffee beans to sweep away dead cells and stimulate micro-circulation.",
+    "features": [
+      "Natural coffee grounds scrub away pollution & dead skin",
+      "Rich in natural antioxidants that tone skin texture",
+      "Wakes up senses with warm roasted espresso aroma",
+      "100% free from microplastic beads"
+    ],
+    "weights": [
+      "75g",
+      "100g",
+      "125g"
+    ],
+    "formulation": "Arabica Coffee Grounds + Coconut Oil Base",
+    "phBalanced": true
+  },
+  {
+    "id": 9,
+    "name": "AVD Organic Neem Antibacterial Soap",
+    "category": "Herbal & Beauty Soaps",
+    "badge": "Ayurvedic Defense",
+    "badgeColor": "#15803d",
+    "img": "/assets/neem_soap.jpg",
+    "desc": "Traditional Ayurvedic antibacterial bathing bar infused with cold-pressed Azadirachta indica (Neem) leaf oil for acne-free, clean skin.",
+    "features": [
+      "Natural antiseptic defense against rashes and summer acne",
+      "Purifies clogged pores and controls excess body sebum",
+      "Therapeutic herbal freshness throughout the day",
+      "Safe for entire family including sensitive skin"
+    ],
+    "weights": [
+      "75g",
+      "100g",
+      "125g"
+    ],
+    "formulation": "Pure Cold-Pressed Neem Oil + Tulsi Extract",
+    "phBalanced": true
+  },
+  {
+    "id": 10,
+    "name": "AVD Multani Mitti Clay Soap",
+    "category": "Herbal & Beauty Soaps",
+    "badge": "Deep Pore Detox",
+    "badgeColor": "#b45309",
+    "img": "/assets/multani_mitti_soap.jpg",
+    "desc": "Authentic Fuller's Earth clay combined with sandalwood oil to absorb excess oil, soothe sun irritation, and unveil natural matte glow.",
+    "features": [
+      "Draws out deep-seated environmental toxins from pores",
+      "Cools heated skin and combats prickly heat rashes",
+      "Natural skin-tightening and smoothing action",
+      "Gentle non-stripping daily cleansing"
+    ],
+    "weights": [
+      "75g",
+      "100g",
+      "125g"
+    ],
+    "formulation": "Bentonite Clay + Fuller's Earth + Sandal Oil",
+    "phBalanced": true
+  },
+  {
+    "id": 11,
+    "name": "AVD Milky Rice Nourishing Soap",
+    "category": "Herbal & Beauty Soaps",
+    "badge": "Skin Brightening",
+    "badgeColor": "#0284c7",
+    "img": "/assets/milky_rice_soap.jpg",
+    "desc": "Inspired by traditional Asian beauty secrets, organic Jasmine rice milk infuses skin with Vitamin E and amino acids for radiant clarity.",
+    "features": [
+      "Natural rice water ceramides strengthen skin moisture barrier",
+      "Gentle lightening of sun tan and dark pigmentation",
+      "Silky soft touch with delicate comforting fragrance",
+      "Ideal for dry and combination skin types"
+    ],
+    "weights": [
+      "75g",
+      "100g",
+      "125g"
+    ],
+    "formulation": "Organic Rice Milk Extract + Vitamin E",
+    "phBalanced": true
+  },
+  {
+    "id": 12,
+    "name": "AVD Cool Mint Icy Soap",
+    "category": "Herbal & Beauty Soaps",
+    "badge": "Instant Icy Blast",
+    "badgeColor": "#0891b2",
+    "img": "/assets/cool_mint_soap.jpg",
+    "desc": "Packed with active menthol crystals and peppermint essential oil to deliver an exhilarating icy shower sensation that beats summer heat.",
+    "features": [
+      "Instant cooling rush that refreshes tired muscles",
+      "Deodorizing botanical actives neutralize sweat odor",
+      "Invigorating sensory shower wake-up call",
+      "Rich moisturizers prevent post-bath dryness"
+    ],
+    "weights": [
+      "75g",
+      "100g",
+      "125g"
+    ],
+    "formulation": "Natural Menthol Crystals + Peppermint Oil",
+    "phBalanced": true
+  }
+]

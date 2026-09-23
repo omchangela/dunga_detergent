@@ -1,0 +1,387 @@
+.contactWrapper {
+  background: var(--page-bg);
+  min-height: 100vh;
+}
+
+/* ─── Info Cards Grid ─────────────────────────────────────────────────────────── */
+.infoGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.25rem;
+  margin-bottom: 3.5rem;
+}
+
+.infoCard {
+  padding: 1.6rem 1.4rem;
+  border-radius: 20px;
+  border: 1px solid transparent;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.28s ease;
+  position: relative;
+}
+
+.infoCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.06);
+}
+
+.iconCircle {
+  width: 48px;
+  height: 48px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.2rem;
+}
+
+.cardHeader {
+  margin-bottom: 0.8rem;
+}
+
+.cardTitle {
+  font-family: var(--font-heading);
+  font-size: 1.05rem;
+  font-weight: 800;
+  color: var(--page-text);
+  margin-bottom: 0.25rem;
+  line-height: 1.3;
+}
+
+.cardSubtitle {
+  font-size: 0.78rem;
+  color: #64748b;
+  display: block;
+}
+
+.cardLines {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  margin-bottom: 1.25rem;
+  flex: 1;
+}
+
+.lineText {
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: #1e293b;
+}
+
+.cardAction {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-decoration: none;
+  transition: gap 0.2s ease;
+}
+
+.cardAction:hover {
+  gap: 0.65rem;
+}
+
+/* ─── Layout Grid ─────────────────────────────────────────────────────────── */
+.layoutGrid {
+  display: grid;
+  grid-template-columns: 1fr 1.35fr;
+  gap: 2.5rem;
+  align-items: start;
+}
+
+/* ─── Left Column ─────────────────────────────────────────────────────────── */
+.leftCol {
+  display: flex;
+  flex-direction: column;
+}
+
+.sideCard {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 24px;
+  padding: 2.25rem;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.03);
+}
+
+.sideTitle {
+  font-family: var(--font-heading);
+  font-size: 1.45rem;
+  font-weight: 800;
+  color: var(--page-text);
+  line-height: 1.3;
+  margin-bottom: 0.9rem;
+}
+
+.sideDesc {
+  font-size: 0.92rem;
+  line-height: 1.65;
+  color: #64748b;
+  margin-bottom: 1.6rem;
+}
+
+.facilityHighlights {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+  margin-bottom: 1.8rem;
+}
+
+.facilityItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  font-size: 0.88rem;
+  line-height: 1.5;
+  color: #334155;
+}
+
+.facilityItem strong {
+  color: #0f172a;
+}
+
+.facilityDot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #16a34a;
+  margin-top: 0.4rem;
+  flex-shrink: 0;
+}
+
+.mapEmbedCard {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 18px;
+  padding: 1rem;
+  margin-bottom: 1.6rem;
+}
+
+.mapHeader {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  margin-bottom: 0.75rem;
+}
+
+.mapHeader strong {
+  font-size: 0.9rem;
+  color: #0f172a;
+  display: block;
+}
+
+.mapHeader p {
+  font-size: 0.75rem;
+  color: #64748b;
+  margin: 0;
+}
+
+.mapMock {
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.slaBadge {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  padding: 1rem 1.25rem;
+  background: #f0fdf4;
+  border: 1px solid #bbf7d0;
+  border-radius: 16px;
+}
+
+.slaBadge strong {
+  display: block;
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: #15803d;
+}
+
+.slaBadge p {
+  font-size: 0.78rem;
+  color: #166534;
+  margin: 0;
+  line-height: 1.4;
+}
+
+/* ─── Right Column: Form Container ───────────────────────────────────────── */
+.rightCol {
+  display: flex;
+  flex-direction: column;
+}
+
+.formContainer {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 28px;
+  padding: 2.75rem;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.04);
+}
+
+.formHead {
+  margin-bottom: 1.75rem;
+}
+
+.formTitle {
+  font-family: var(--font-heading);
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: var(--page-text);
+  margin-top: 0.5rem;
+  margin-bottom: 0.35rem;
+}
+
+.formSub {
+  font-size: 0.92rem;
+  color: #64748b;
+}
+
+.typeSelector {
+  margin-bottom: 1.6rem;
+}
+
+.chipRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.typeChip {
+  background: #f1f5f9;
+  border: 1px solid #e2e8f0;
+  color: #475569;
+  font-size: 0.82rem;
+  font-weight: 600;
+  padding: 0.5rem 0.9rem;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.typeChip:hover {
+  background: #e2e8f0;
+  color: #1e293b;
+}
+
+.typeChipActive {
+  background: #f0fdf4 !important;
+  border-color: #16a34a !important;
+  color: #15803d !important;
+  font-weight: 700 !important;
+  box-shadow: 0 2px 8px rgba(22, 163, 74, 0.15);
+}
+
+.inputGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.15rem;
+  margin-bottom: 1.15rem;
+}
+
+.formFooter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.privacyNote {
+  font-size: 0.78rem;
+  color: #64748b;
+  line-height: 1.45;
+  max-width: 320px;
+}
+
+.submitBtn {
+  padding: 0.85rem 1.8rem;
+  font-size: 0.95rem;
+  font-weight: 700;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+/* ─── Success Box ────────────────────────────────────────────────────────── */
+.successBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 3rem 1.5rem;
+}
+
+.successIcon {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background: #f0fdf4;
+  border: 2px solid #bbf7d0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 10px 25px rgba(22, 163, 74, 0.15);
+}
+
+.successTitle {
+  font-family: var(--font-heading);
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: #0f172a;
+  margin-bottom: 0.75rem;
+}
+
+.successDesc {
+  font-size: 0.95rem;
+  color: #475569;
+  line-height: 1.65;
+  max-width: 480px;
+  margin-bottom: 1.5rem;
+}
+
+.ticketId {
+  background: #f8fafc;
+  border: 1px dashed #cbd5e1;
+  padding: 0.6rem 1.2rem;
+  border-radius: 12px;
+  font-size: 0.88rem;
+  color: #334155;
+  margin-bottom: 2rem;
+}
+
+.ticketId strong {
+  color: #16a34a;
+  letter-spacing: 0.05em;
+}
+
+/* ─── Responsive ─────────────────────────────────────────────────────────── */
+@media (max-width: 1080px) {
+  .infoGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .layoutGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .infoGrid {
+    grid-template-columns: 1fr;
+  }
+  .inputGrid {
+    grid-template-columns: 1fr;
+  }
+  .formContainer {
+    padding: 1.75rem 1.25rem;
+  }
+  .formFooter {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .submitBtn {
+    width: 100%;
+    justify-content: center;
+  }
+}
